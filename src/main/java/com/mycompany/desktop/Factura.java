@@ -1,14 +1,14 @@
-import com.formdev.flatlaf.FlatDarculaLaf;
+package com.mycompany.desktop;
 
 import javax.swing.*;
+import com.formdev.flatlaf.FlatDarculaLaf;
 
-public class Venta extends JFrame{
+public class Factura extends JFrame {
 
-    public Venta (){
-        iniciarVenta();
+    public Factura(){
+        inicializarFactura();
     }
-
-    private void iniciarVenta(){
+    private void inicializarFactura(){
         setContentPane(panelPrincipal);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(900,700);
@@ -17,16 +17,17 @@ public class Venta extends JFrame{
 
     public static void main(String[] args) {
         FlatDarculaLaf.setup();
-        Venta venta = new Venta();
-        venta.setVisible(true);
+        Factura factura = new Factura();
+        factura.setVisible(true);
     }
 
     private JPanel panelPrincipal;
     private JTable table1;
-    private JButton cobrarButton;
-    private JTextField textField1;
     private JTextField textField2;
     private JTextField textField3;
-    private JButton agregarButton;
-    private JButton eliminarButton;
+    private JTextField textField1;
+    private JButton aplicarFiltrosButton;
+    private JButton volverButton;
+
+
 }

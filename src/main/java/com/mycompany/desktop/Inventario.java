@@ -1,3 +1,5 @@
+package com.mycompany.desktop;
+
 import com.formdev.flatlaf.FlatDarculaLaf;
 
 import javax.swing.*;
@@ -12,6 +14,7 @@ public class Inventario extends JFrame {
     private JTextField textField4;
     private JButton guardarButton;
     private JButton eliminarButton;
+    private JButton volverButton;
 
     public Inventario (){
         iniciarInventario();
