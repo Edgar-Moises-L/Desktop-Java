@@ -3,15 +3,34 @@ package com.mycompany.desktop;
 import com.formdev.flatlaf.FlatDarculaLaf;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
 
 public class Principal extends JFrame {
     private JPanel panelPrincipal;
-    private JButton inventarioButton;
-    private JButton ventasButton;
-    private JButton facturasButton;
+    private JButton btnInventario;
+    private JButton btnVentas;
+    private JButton btnFacturas;
 
     public Principal(){
         iniciarPrincipal();
+        btnInventario.addActionListener(this::showInventario);
+        btnVentas.addActionListener(this::showVentas);
+        btnFacturas.addActionListener(this::showFacturas);
+    }
+
+    private void showInventario (ActionEvent e){
+        Inventario inventario = new Inventario();
+        inventario.setVisible(true);
+    }
+
+    private void showVentas(ActionEvent e){
+        Venta venta = new Venta();
+        venta.setVisible(true);
+    }
+
+    private void showFacturas(ActionEvent e){
+        Factura factura = new Factura();
+        factura.setVisible(true);
     }
 
     private void iniciarPrincipal(){

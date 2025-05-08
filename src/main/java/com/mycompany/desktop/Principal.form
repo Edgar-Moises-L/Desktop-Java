@@ -30,7 +30,7 @@
               <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
             </constraints>
           </vspacer>
-          <component id="15e3f" class="javax.swing.JButton" binding="inventarioButton" default-binding="true">
+          <component id="15e3f" class="javax.swing.JButton" binding="btnInventario">
             <constraints>
               <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -38,7 +38,7 @@
               <text value="Inventario"/>
             </properties>
           </component>
-          <component id="5edd1" class="javax.swing.JButton" binding="ventasButton" default-binding="true">
+          <component id="5edd1" class="javax.swing.JButton" binding="btnVentas">
             <constraints>
               <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -46,7 +46,7 @@
               <text value="Ventas"/>
             </properties>
           </component>
-          <component id="50ad4" class="javax.swing.JButton" binding="facturasButton" default-binding="true">
+          <component id="50ad4" class="javax.swing.JButton" binding="btnFacturas">
             <constraints>
               <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
